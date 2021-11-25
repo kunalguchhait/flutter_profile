@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
+  static const String path = "ProfileScreen";
   const ProfileScreen({ Key? key }) : super(key: key);
 
   @override
