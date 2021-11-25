@@ -6,24 +6,36 @@ class TabbarScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Tab Bar"),
-        centerTitle: true,
-        bottom: TabBar(tabs: [
-          Tab(
-            text: "Tab 1",
-            icon: Icon(Icons.home),
+    return DefaultTabController(
+      length: 3,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("Tab Bar"),
+          centerTitle: true,
+          bottom: TabBar(
+            tabs: [
+              Tab(
+                text: "tab 1",
+                icon: Icon(Icons.home)
+                 ),
+              Tab(
+                text: "tab 2",
+                icon: Icon(Icons.star)
+                ),
+              Tab(
+                text: "tab 3",
+                icon: Icon(Icons.person)
+                ),
+            ],
           ),
-          Tab(
-            text: "Tab 2",
-            icon: Icon(Icons.star),
+        ),
+        body: TabBarView(
+          children: [
+            Center(child: Text("tab 1")),
+            Center(child: Text("tab 2")),
+            Center(child: Text("tab 3"))
+          ]
           ),
-          Tab(
-            text: "Tab 3",
-            icon: Icon(Icons.person),
-          ),
-        ]),
       ),
     );
   }
