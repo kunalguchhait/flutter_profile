@@ -1,5 +1,6 @@
-import 'dart:js';
+// import 'dart:js';
 
+import 'package:demo_project/gridview_screen.dart';
 import 'package:demo_project/profile.dart';
 import 'package:demo_project/tabbar_screen.dart';
 import 'package:flutter/material.dart';
@@ -15,10 +16,11 @@ void main(){
         )
       ),
       // home: ProfileScreen(),
-      initialRoute: TabbarScreen.path,
+      initialRoute: GridViewScreen.path,
       routes: {
         ProfileScreen.path : (context)=> ProfileScreen(),
         TabbarScreen.path : (context)=> TabbarScreen(),
+        GridViewScreen.path : (context)=> GridViewScreen(),
 
       },
     )
