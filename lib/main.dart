@@ -3,6 +3,7 @@
 import 'package:demo_project/gridview_screen.dart';
 import 'package:demo_project/profile.dart';
 import 'package:demo_project/tabbar_screen.dart';
+import 'package:demo_project/url_launchar.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -16,8 +17,9 @@ void main(){
         )
       ),
       // home: ProfileScreen(),
-      initialRoute: GridViewScreen.path,
+      initialRoute: UrlLauncher.path,
       routes: {
+        UrlLauncher.path : (context)=> UrlLauncher(),
         ProfileScreen.path : (context)=> ProfileScreen(),
         TabbarScreen.path : (context)=> TabbarScreen(),
         GridViewScreen.path : (context)=> GridViewScreen(),
