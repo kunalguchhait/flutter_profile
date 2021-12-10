@@ -10,9 +10,9 @@ void main(){
   runApp(
     MaterialApp(
       title: "Demo Project",
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       theme: ThemeData(
-        fontFamily: "Lobster",
+        fontFamily: "SourceSansPro",
         textTheme: TextTheme(
         )
       ),
